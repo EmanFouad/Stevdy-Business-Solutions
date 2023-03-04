@@ -1,0 +1,33 @@
+@import "./mixins";
+.headTitle{
+	font-size: 38px;
+	font-weight: 500;
+	color: #3B3A3A;
+	padding-top: 25px;
+	position: relative;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0px;
+		inset-inline-start: 0px;
+		width: 79px;
+		height: 5px;
+		border-radius: 10px;
+		background-color: #FF6057;
+	}
+
+	@include tablet{
+		font-size: 28px;
+	}
+}
+.btnLearn{
+	display: flex;
+	align-items: center;
+	p{
+		font-size: 16px;
+		font-weight: 400;
+		color: #FF6057;
+		margin-inline-end: 56px;
+	}
+}

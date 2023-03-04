@@ -1,0 +1,35 @@
+@import "../../global-styles/global.scss";
+
+.ourWorldWrapper {
+  width: 60%;
+  margin: 0px auto 65px;
+
+  @include minipc {
+    width: 80%;
+  }
+  .ourWorldContainer {
+    .ourWorldHead {
+      width: 32%;
+      text-align: center;
+      margin: 0px auto 90px;
+      h2 {
+        font-size: 38px;
+        font-weight: 500;
+        color: #3b3a3a;
+        @include tablet {
+          font-size: 28px;	 
+        }
+      }
+      @include minipc {
+        width: 80%;
+		margin: 0px auto 40px;
+      }
+    }
+    .ourWorldBody {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}

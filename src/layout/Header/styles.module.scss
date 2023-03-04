@@ -1,0 +1,71 @@
+@import "../../global-styles/global.scss";
+.headerWrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+
+    @include smallpc {
+      width: 95%;
+      gap: 15px;
+    }
+
+	.menuWrapper{
+		display: none;
+
+		@include tablet{
+			display: inline-block;
+		}
+	}
+    .logoWrapper {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .navItemsListContainer {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .navItemWrapper {
+        p {
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+	  @include tablet{
+		display: none;
+	  }
+    }
+    .actionBtnWrapper {
+      min-width: 178px;
+      min-height: 45px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #ff6057, rgba(124, 28, 128, 0.66));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+	  @include tablet{
+		display: none;
+	  }
+    }
+  }
+}

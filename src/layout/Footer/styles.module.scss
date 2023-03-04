@@ -1,0 +1,115 @@
+@import "../../global-styles/global.scss";
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  padding: 42px 0 24px;
+
+  .footerContainer {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+    .infoContainer {
+      width: calc((100% / 3) - 15px);
+      .logoWrapper {
+        margin-bottom: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .description {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+      @include tablet {
+        width: 100%;
+      }
+    }
+    .serviceWrapper {
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .serviceListContainer {
+        li {
+          font-size: 14px;
+          color: #fff;
+          margin-bottom: 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .subscribeWrapper {
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .emailInputWrapper {
+        background-color: #fff;
+        border-radius: 25px;
+        min-width: 480px;
+        min-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline-start: 30px;
+
+        input {
+          border: 0;
+          outline: 0;
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            color: #565656 !important;
+            @include tablet {
+              font-size: 12px;
+            }
+          }
+        }
+        button {
+          background-color: #ff6057;
+          border: 1px solid #fff;
+          min-width: 205px;
+          min-height: 50px;
+          border-radius: 25px;
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+
+            @include tablet {
+              font-size: 12px;
+            }
+          }
+          @include minipc {
+            min-width: 100px;
+            min-height: 35px;
+          }
+        }
+        @include minipc {
+          min-width: 200px;
+          min-height: 35px;
+        }
+      }
+    }
+    @include minipc {
+      width: 90%;
+    }
+    @include tablet {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+}

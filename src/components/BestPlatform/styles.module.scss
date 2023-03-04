@@ -1,0 +1,102 @@
+@import "../../global-styles/global.scss";
+.bestPlatformWrapper{
+	@include tablet{
+		margin-bottom: 80px;
+	}
+	.bestplatformContainer{
+		display: flex;
+		gap: 109px;
+		align-items: center;
+
+		@include smallpc{
+			justify-content: space-between;
+			gap: 10px;
+		}
+		@include tablet{
+			flex-direction: column;	
+		}
+
+		.imageBgContainer{
+			background-image: url("../../../public/assets/Best-Platform/shape1.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			width: 100%;
+			height: 100vh;
+	
+			@include tablet{
+				height: 75vh;
+			}
+
+			.imageWrapper{
+				position: absolute;
+				top: 50%;
+				inset-inline-start: -190px;
+				transform: translateY(-50%);
+
+				@include tablet{
+					inset-inline-start: -130px;
+				}
+
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+
+					@include tablet{
+						width: 85%;
+					}
+				}
+				
+			}
+		}
+		.contentContainer{
+			h3{
+				width: 50%;
+			}
+			.description{
+				font-size: 14px;
+				color: #8F8F8F;
+				width: 50%;
+				margin: 46px 0px 27px;
+			}
+			@include smallpc{
+				width: 80%;
+				padding: 0px 20px;
+				h3,.description{
+					width: 100%;
+				}
+			}
+			@include tablet{
+				padding: 0px;
+				.description{
+					margin: 20px 0px;
+				}
+			}
+		}
+
+		.imgPositionRight{
+			order: 2;
+			background-image: url("../../../public/assets/Best-Platform/shape2.svg");
+			background-position: right;
+			@include smallpc{
+				.imageWrapper{
+					inset-inline-start: -50px
+				}
+			}
+			@include tablet{
+				order: 1;
+			}
+		}
+		.contentPositionRight{
+			order: 1;
+			transform: translateX(30%);
+			@include smallpc{
+				transform: none;
+			}
+			@include tablet{
+				order: 2;
+			}
+		}
+	}
+}

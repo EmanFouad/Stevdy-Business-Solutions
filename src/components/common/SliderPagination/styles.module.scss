@@ -1,0 +1,16 @@
+.sliderPagination{
+	display: flex;
+	gap: 9px;
+	align-items: center;
+
+	li{
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #8F8F8F;
+
+		&.active{
+			background-color: #FF6057;
+		}
+	}
+}

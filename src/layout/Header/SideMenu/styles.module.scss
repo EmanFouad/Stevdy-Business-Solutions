@@ -1,0 +1,51 @@
+@import "../../../global-styles/global.scss";
+
+.sidemenuWrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	padding: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+	z-index: 999;
+
+  .sidemenuContainer {
+    .navItemsListContainer {
+      .navItemWrapper {
+		text-align: center;
+		padding-bottom: 10px;
+		margin: 15px 0px;
+        p {
+          font-size: 14px;
+          color: #3b3a3a;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+		&:not(:last-child){
+			border-bottom: 1px solid #ccc;
+		}
+      }
+    }
+    .actionBtnWrapper {
+      min-width: 178px;
+      min-height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #ff6057, rgba(124, 28, 128, 0.66));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+    }
+  }
+}

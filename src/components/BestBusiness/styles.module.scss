@@ -1,0 +1,52 @@
+@import "../../global-styles/global.scss";
+.bestBusinessWrapper {
+  width: 59%;
+  margin: auto;
+
+  @include smallpc {
+    width: 80%;
+  }
+  @include tablet{
+	margin-bottom: 30px;
+  }
+  
+  .bestBusinessContainer {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+    }
+    .contentContainer {
+      width: 41%;
+
+      .description {
+        font-size: 14px;
+        color: #8f8f8f;
+        margin: 46px 0px 27px;
+
+		@include mobile {
+			margin: 15px 0px;
+		  }
+      }
+      @include tablet {
+        width: 100%;
+        order: 2;
+      }
+    }
+
+    .bestBusinessItemsWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+      @include tablet {
+        width: 100%;
+        order: 1;
+      }
+	  .bestBusinessItemWrapper {
+		width: calc((100% / 2) - 15px);
+		margin-bottom: 45px;
+	}
+    }
+  }
+}

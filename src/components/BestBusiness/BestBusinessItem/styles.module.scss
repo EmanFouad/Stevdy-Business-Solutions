@@ -1,0 +1,48 @@
+@import "../../../global-styles/global.scss";
+
+.bestBusinessItemContainer {
+	
+	.iconWrapper {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 79px;
+	  height: 79px;
+	  border-radius: 50%;
+	  background-color: #f1291e;
+	  box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 0.26);
+	  margin-bottom: 16px;
+
+	  @include mobile{
+		width: 60px;
+		height: 60px;
+	  }
+	}
+	.itemHead {
+	  h4 {
+		font-size: 14px;
+		font-weight: 300;
+		color: #3b3a3a;
+		padding-bottom: 17px;
+		position: relative;
+		margin-bottom: 21px;
+
+		&::after {
+		  content: "";
+		  position: absolute;
+		  bottom: 0px;
+		  inset-inline-start: 0px;
+		  width: 79px;
+		  height: 3px;
+		  border-radius: 10px;
+		  background-color: #ff6057;
+		}
+	  }
+	}
+	.itemBody {
+	  p {
+		font-size: 14px;
+		color: #8f8f8f;
+	  }
+	}
+  }

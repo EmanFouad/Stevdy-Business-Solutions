@@ -1,0 +1,105 @@
+@import "../../global-styles/global.scss";
+
+header{
+	position: relative;
+}
+
+.mainSectionWrapper{
+	background-image: url("../../../public/assets/Main/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 88vh;
+	display: flex;
+	align-items: center;
+	padding: 0px 40px;
+
+	@include minipc{
+		height: 70vh;
+	}
+	@include tablet{
+		height: 90vh;
+		background-size: auto;
+		background-position: initial;
+		margin-bottom: 30px;
+	}
+	@include mobile{
+		height: 100vh;
+	}
+
+	.mainSectionContainer{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 35px;
+
+		@include tablet{
+			flex-direction: column;
+			gap: 10px;
+		}
+		
+		.contentContainer{
+			width: 26%;	
+			.title{
+				color: #FFFFFF;
+				font-size: 58px;
+				font-weight: 500;
+				margin-bottom: 20px;
+
+				@include minipc{
+					font-size: 36px;
+				}
+				@include mobile{
+					font-size: 24px;
+				}
+			}
+			.subTitle{
+				color: #FFFFFF;
+				font-size: 24px;
+				margin-bottom: 9px;
+
+				@include minipc{
+					font-size: 20px;
+				}
+			}
+			.description{
+				color: #FFFFFF;
+				font-size: 18px;
+				margin-bottom: 32px;
+			}
+			.btnAction{
+				background-color: #FFFFFF;
+				border-radius: 10px;
+				padding: 11px 53px;
+				font-size: 16px;
+				font-weight: 400;
+				color: #FF6057;
+			}
+
+			@include smallpc{
+				width: 43%;
+			}
+			@include minipc{
+				width: 50%;
+			}
+			@include tablet{
+				width: 100%;
+				order: 2;
+			}
+		}
+		.imageWrapper{
+			width: 53%;
+
+			@include tablet{
+				width: 100%;
+				order: 1;
+			}
+		
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
