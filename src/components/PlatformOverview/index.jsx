@@ -1,6 +1,7 @@
 import React from 'react'
 import SliderPagination from '../common/SliderPagination'
 import styles from './styles.module.scss'
+import dashboardimg from "./../../assets/Main/image.png"
 
 const PlatformOverview = () => {
 	return (
@@ -16,7 +17,7 @@ const PlatformOverview = () => {
 				<div className={styles.platformOverviewBody}>
 					<div className={styles.sliderImagesWrapper}>
 						<div className={styles.sliderImageContainer}>
-							<img src="/assets/Main/image.png" alt="dashboard" />
+							<img src={dashboardimg} alt="dashboard" />
 						</div>
 					</div>
 					<SliderPagination />

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import logo from "./../../assets/Main/logo-footer.svg"
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
 		<div className={styles.footerContainer}>
 			<div className={styles.infoContainer}>
 				<div className={styles.logoWrapper}>
-					<img src="/assets/Main/logo-footer.svg" alt="logo" />
+					<img src={logo} alt="logo" />
 				</div>
 				<p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget diam at mi sollicitudin</p>
 			</div>

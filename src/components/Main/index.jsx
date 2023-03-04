@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../layout/Header'
 import styles from './styles.module.scss'
+import dashboardimg from "./../../assets/Main/image.png"
 
 const MainSection = () => {
 	return (
@@ -17,7 +18,7 @@ const MainSection = () => {
 						<button className={styles.btnAction}>About us</button>
 					</div>
 					<div className={styles.imageWrapper}>
-						<img src="/assets/Main/image.png" alt="dashboard" />
+						<img src={dashboardimg} alt="dashboard" />
 					</div>
 				</div>
 			</main>

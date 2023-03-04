@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import dashboardimg from "./../../assets/Best-Platform/image.png"
+import arrow from "./../../assets/Best-Platform/next.svg"
 
 const BestPlatform = ({ positionRight }) => {
 	return (
@@ -7,7 +9,7 @@ const BestPlatform = ({ positionRight }) => {
 			<div className={styles.bestplatformContainer}>
 				<div className={`${styles.imageBgContainer} ${positionRight && styles.imgPositionRight}`} >
 					<div className={styles.imageWrapper}>
-						<img src="/assets/Best-Platform/image.png" alt="dashboard" />
+						<img src={dashboardimg} alt="dashboard" />
 					</div>
 				</div>
 				<div className={`${styles.contentContainer} ${positionRight && styles.contentPositionRight}`}>
@@ -16,7 +18,7 @@ const BestPlatform = ({ positionRight }) => {
 						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
 					<button className='btnLearn'>
 						<p>Learn About Our Success</p>
-						<img src="/assets/Best-Platform/next.svg" alt="next icon" />
+						<img src={arrow} alt="next icon" />
 					</button>
 				</div>
 			</div>

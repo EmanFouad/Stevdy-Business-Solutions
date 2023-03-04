@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import SideMenu from './SideMenu'
 import styles from './styles.module.scss'
+import logo from "./../../assets/Main/logo.svg"
+import more from "./../../assets/Main/more.png"
 
 const Header = () => {
 	const [showSideMenu, setShowSidemenu] = useState(false)
@@ -18,10 +20,10 @@ const Header = () => {
 			<nav className={styles.headerWrapper}>
 				<div className={styles.headerContainer}>
 					<div className={styles.menuWrapper} onClick={handleShowSidemenu}>
-						<img src="/assets/Main/more.png" alt="menu" />
+						<img src={more} alt="menu" />
 					</div>
 					<div className={styles.logoWrapper}>
-						<img src="/assets/Main/logo.svg" alt="logo" />
+						<img src={logo} alt="logo" />
 					</div>
 					<ul className={styles.navItemsListContainer}>
 						<li className={styles.navItemWrapper}>

@@ -17,7 +17,7 @@
 		}
 
 		.imageBgContainer{
-			background-image: url("../../../public/assets/Best-Platform/shape1.svg");
+			background-image: url("./../../assets/Best-Platform/shape1.svg");
 			background-size: contain;
 			background-repeat: no-repeat;
 			position: relative;
@@ -77,7 +77,7 @@
 
 		.imgPositionRight{
 			order: 2;
-			background-image: url("../../../public/assets/Best-Platform/shape2.svg");
+			background-image: url("./../../assets/Best-Platform/shape2.svg");
 			background-position: right;
 			@include smallpc{
 				.imageWrapper{
